@@ -1,0 +1,7 @@
+a:focus {
+    background-color: #f0f8ff;
+    border: dashed 2px #483d8b;
+    border-width: medium;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+}

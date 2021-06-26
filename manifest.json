@@ -1,0 +1,35 @@
+{
+  "name": "link-grep-selector",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A tag link grep filter for jump without click",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["jquery.min.js", "jquery.mark.min.js", "script.js"],
+      "css": ["mark.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "48": "icon48.png"
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+G",
+        "windows": "Ctrl+G",
+        "mac": "Command+G",
+        "linux": "Ctrl+G"
+      },
+      "description": "Trigger",
+      "global": true
+    }
+  }
+}
