@@ -14,8 +14,13 @@ function scroll_to_element(element) {
     let height = $(window).height();
     let offset = height / 3;
     let duration = 500;
+    let scroll_top = $(window).scrollTop();
+    let target_top = element.offset().top - offset;
+    if (Math.abs(target_top - scroll_top) < height) {
+        duration = 100;
+    }
     $([document.documentElement, document.body]).animate({
-        scrollTop: element.offset().top - offset
+        scrollTop: target_top
     }, duration);
 }
 
