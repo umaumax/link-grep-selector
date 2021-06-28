@@ -26,6 +26,11 @@ $(function() {
         let text = request_obj.text;
 
         $("a").unmark();
+        // skip highlight
+        if (text.length <= 2) {
+            return true;
+        }
+
         $("a").mark(text);
         marks = $("mark");
         mark_index = 0;
