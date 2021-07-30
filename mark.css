@@ -1,7 +1,12 @@
-a:focus {
-    background-color: #f0f8ff;
+a:focus::after {
+    content: attr(a-focus-after);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
     border: dashed 2px #483d8b;
     border-width: medium;
-    padding: 0.25em 0.5em;
+    margin: -3px;
     border-radius: 4px;
 }
