@@ -1,12 +1,4 @@
-a:focus::after {
-    content: attr(a-focus-after);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    border: dashed 2px #483d8b;
-    border-width: medium;
-    margin: -3px;
-    border-radius: 4px;
+a:focus {
+    width: max-content;
+    box-shadow: inset 0px 0px 0.3em #FF824A, -1px -1px #FF824A, -1px 1px #FF824A, 1px -1px #FF824A, 1px 1px #FF824A;
 }
