@@ -1,4 +1,3 @@
 a:focus {
-    width: max-content;
     box-shadow: inset 0px 0px 0.3em #FF824A, -1px -1px #FF824A, -1px 1px #FF824A, 1px -1px #FF824A, 1px 1px #FF824A;
 }
