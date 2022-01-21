@@ -1,7 +1,7 @@
 {
   "name": "link-grep-selector",
   "version": "0.0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "A tag link grep filter for jump without click",
   "content_scripts": [
     {
@@ -14,7 +14,7 @@
   "icons": {
     "48": "icon48.png"
   },
-  "browser_action": {
+  "action": {
     "default_popup": "popup.html",
     "default_icon": {
       "48": "icon48.png"
