@@ -8,9 +8,6 @@ function focus_mark(element) {
 }
 
 function scroll_to_element(element) {
-    console.log('element', element);
-    console.log('offset', element.offset());
-
     let height = $(window).height();
     let offset = height / 3;
     let duration = 500;
@@ -51,7 +48,6 @@ $(function() {
 
     // WARN: if popup.html has focus, below event is not fired
     window.addEventListener('keydown', function(event) {
-        console.log('keydown', event);
         // ctrl + n, alt + n
         if (event.keyCode == 78 && (event.ctrlKey || event.altKey)) {
             let mark_length = marks.length;
